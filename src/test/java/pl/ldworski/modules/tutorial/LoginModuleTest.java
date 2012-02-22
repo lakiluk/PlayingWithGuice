@@ -22,7 +22,7 @@ public class LoginModuleTest {
     }
 
     @Test
-    public void shouldFieldBeInjected() throws Exception {
+    public void shouldLoginServiceBeCreatedWithGuice() throws Exception {
         // given
         // when
         LoginService loginService = injector.getInstance(LoginService.class);
@@ -33,7 +33,7 @@ public class LoginModuleTest {
     }
 
     @Test
-    public void shouldGetMailingServiceWithSetFields() throws Exception {
+    public void shouldGetMailingServiceWithFieldsSet() throws Exception {
         // given
         // when
         MailService mailingService = injector.getInstance(MailService.class);
